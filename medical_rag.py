@@ -38,7 +38,7 @@ class MedicalRAGPipeline:
                 raise ValueError("Gemini API key not provided")
                 
             genai.configure(api_key=gemini_api_key)
-            self.model = genai.GenerativeModel('gemini-pro')
+            self.model = genai.GenerativeModel('gemini-1.5-flash')
             
             # Add exit patterns
             self.exit_patterns = {
